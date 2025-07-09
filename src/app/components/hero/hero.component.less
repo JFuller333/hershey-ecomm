@@ -1,0 +1,63 @@
+.hero {
+    background: url('/assets/amusement-hero.png') center/cover no-repeat;
+    height: 40vh; // shorter height
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  
+    .hero-content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+  
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+  
+      .cta {
+        background: #ff6f61;
+        border: none;
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background: #e65b50;
+        }
+      }
+    }
+  
+    @media (max-width: 600px) {
+      height: 30vh;
+  
+      .hero-content {
+        padding: 1rem;
+  
+        h1 {
+          font-size: 1.5rem;
+        }
+  
+        p {
+          font-size: 1rem;
+        }
+  
+        .cta {
+          padding: 0.6rem 1rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  
